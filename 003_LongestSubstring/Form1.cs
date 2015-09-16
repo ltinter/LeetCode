@@ -36,11 +36,8 @@ namespace _003_LongestSubstring
             int result = (new Solution()).LengthOfLongestSubstring(sb.ToString());
             sw.Stop();
             textBox1.Text = result.ToString() + " " + sw.ElapsedMilliseconds.ToString() + "ms";
-            
         }
     }
-
-
 
     public class Solution
     {
