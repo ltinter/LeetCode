@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001_TwoSum", "001_TwoSum\001_TwoSum.csproj", "{83982151-CEBD-4BF1-87AD-6F350A947924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002_AddTwoNumbers", "002_AddTwoNumbers\002_AddTwoNumbers.csproj", "{E8C38E6F-8B5B-443C-9817-58152B2841FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003_LongestSubstring", "003_LongestSubstring\003_LongestSubstring.csproj", "{DE579078-46E8-4690-882F-DC61780E8ECF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83982151-CEBD-4BF1-87AD-6F350A947924}.Debug|x86.ActiveCfg = Debug|x86
+		{83982151-CEBD-4BF1-87AD-6F350A947924}.Debug|x86.Build.0 = Debug|x86
+		{83982151-CEBD-4BF1-87AD-6F350A947924}.Release|x86.ActiveCfg = Release|x86
+		{83982151-CEBD-4BF1-87AD-6F350A947924}.Release|x86.Build.0 = Release|x86
+		{E8C38E6F-8B5B-443C-9817-58152B2841FA}.Debug|x86.ActiveCfg = Debug|x86
+		{E8C38E6F-8B5B-443C-9817-58152B2841FA}.Debug|x86.Build.0 = Debug|x86
+		{E8C38E6F-8B5B-443C-9817-58152B2841FA}.Release|x86.ActiveCfg = Release|x86
+		{E8C38E6F-8B5B-443C-9817-58152B2841FA}.Release|x86.Build.0 = Release|x86
+		{DE579078-46E8-4690-882F-DC61780E8ECF}.Debug|x86.ActiveCfg = Debug|x86
+		{DE579078-46E8-4690-882F-DC61780E8ECF}.Debug|x86.Build.0 = Debug|x86
+		{DE579078-46E8-4690-882F-DC61780E8ECF}.Release|x86.ActiveCfg = Release|x86
+		{DE579078-46E8-4690-882F-DC61780E8ECF}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
