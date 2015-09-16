@@ -65,7 +65,7 @@ namespace _003_LongestSubstring
                     lsMain = new bool[128];
                 }
             }
-            Longest = Math.Max(Longest, s.Length - StartIndex);
+            Longest = Math.Max(Longest, s.Length - StartIndex - 1 );
 
             return Longest;
         }
