@@ -34,7 +34,8 @@ namespace _003_LongestSubstring
                 //sb.Append("aaaaaa");
                 //sb.Append("dvdf");
                 //sb.Append("anviaj");
-                sb.Append("pwwkew");
+                //sb.Append("pwwkew");
+                sb.Append("cdd");
             }
             sw.Start();
             int result = (new Solution()).LengthOfLongestSubstring(sb.ToString());
