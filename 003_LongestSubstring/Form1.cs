@@ -35,7 +35,10 @@ namespace _003_LongestSubstring
                 //sb.Append("dvdf");
                 //sb.Append("anviaj");
                 //sb.Append("pwwkew");
-                sb.Append("cdd");
+                //sb.Append("cdd");
+                //sb.Append("abcabcbb");
+                //sb.Append("dvadasdf");
+                sb.Append("bbbbbbbabbbbbbbba");
             }
             sw.Start();
             int result = (new Solution()).LengthOfLongestSubstring(sb.ToString());
@@ -51,30 +54,22 @@ namespace _003_LongestSubstring
             if (s.Equals(string.Empty)) return 0;
 
             int Longest = 1, StartIndex = 0;
-            int[] lsMain = new int[128];
-            for (int i = 0; i < lsMain.Length; i++) lsMain[i] = -1;
 
-
+            int[] map = new int[128];
+            for (int x = 0; x < 128; x++) map[x] = -1;
             for (int i = 0; i < s.Length; i++)
             {
-                int ValueOfInt = (int)s[i];
-                if (lsMain[ValueOfInt] == -1)
+                int tempInt = map[s[i]];
+                if (tempInt > -1)
                 {
-                    lsMain[ValueOfInt] = i;
-                }
-                else
-                {
-                    Longest = Math.Max(Longest, i - lsMain[ValueOfInt]);
-                    StartIndex = lsMain[ValueOfInt] + 1;
-                    for (int j = 0; j < lsMain.Length; j++)
+                    if (StartIndex <= tempInt)
                     {
-                        if (lsMain[j] < lsMain[ValueOfInt]) lsMain[j] = -1;
+                        StartIndex = tempInt + 1;
                     }
-                    lsMain[ValueOfInt] = i;
-
                 }
+                map[s[i]] = i;
+                Longest = Math.Max(Longest, i - StartIndex + 1);
             }
-            Longest = Math.Max(Longest, s.Length - StartIndex);
 
             return Longest;
         }
