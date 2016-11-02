@@ -23,7 +23,6 @@ namespace _005_LongestPalindromicSubstring
             if (sLen <= 1) return s;
             char[] tempCharset = new char[sLen * 2 + 1];
             char[] orgStrCharset = s.ToCharArray();
-            orgStrCharset[0] = 'x';
             tempCharset[0] = '#';
             for (int i = 0; i < sLen; i++)
             {
