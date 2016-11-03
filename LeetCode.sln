@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "004_MedianofTwoSortedArrays
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "005_LongestPalindromicSubstring", "005_LongestPalindromicSubstring\005_LongestPalindromicSubstring.csproj", "{057CA4E7-0E69-4DF0-B8B8-AE304FC1BD4E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "006_ZigZagConversion", "006_ZigZagConversion\006_ZigZagConversion.csproj", "{A9AB53C4-89A8-4CB6-9795-77F60C244EA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,14 @@ Global
 		{057CA4E7-0E69-4DF0-B8B8-AE304FC1BD4E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{057CA4E7-0E69-4DF0-B8B8-AE304FC1BD4E}.Release|x86.ActiveCfg = Release|Any CPU
 		{057CA4E7-0E69-4DF0-B8B8-AE304FC1BD4E}.Release|x86.Build.0 = Release|Any CPU
+		{A9AB53C4-89A8-4CB6-9795-77F60C244EA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9AB53C4-89A8-4CB6-9795-77F60C244EA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9AB53C4-89A8-4CB6-9795-77F60C244EA1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A9AB53C4-89A8-4CB6-9795-77F60C244EA1}.Debug|x86.Build.0 = Debug|Any CPU
+		{A9AB53C4-89A8-4CB6-9795-77F60C244EA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9AB53C4-89A8-4CB6-9795-77F60C244EA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9AB53C4-89A8-4CB6-9795-77F60C244EA1}.Release|x86.ActiveCfg = Release|Any CPU
+		{A9AB53C4-89A8-4CB6-9795-77F60C244EA1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
