@@ -20,36 +20,30 @@ namespace _006_ZigZagConversion
     {
         public string Convert(string s, int numRows)
         {
-            string returnvalue = "";
+            if (numRows == 0) return "";
             int sLen = s.Length;
             char[] charS = s.ToCharArray();
-            char[][] charset = new char[numRows][];
-            charset = new char[sLen / numRows + 1];
-            int ptrS = 0, CurColom = 0;
+            char[] charset = new char[sLen];
 
-            while (true)
+            for (int i = 0; i < sLen; i++)
             {
-                for (int i = 0; i < numRows; i++)
-                {
-                    charset[CurColom, i] = charS[ptrS];
-                    ptrS++;
-                    if (ptrS >= sLen) return PostProcss(charset, numRows);
-                }
-                CurColom++;
-
+                charset[Procss(i, numRows)] = charS[i];
             }
 
-            return returnvalue;
+            return (new string(charset));
         }
-        public string PostProcss(char[,] charset, int numRows)
+        public int Procss(int InputIndex, int numRows)
         {
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < numRows; i++)
-            {
-                sb.Append(new String(charset[i,]));
-            }
+            int returnvalue = 0;
+
+
 
             return returnvalue;
         }
     }
 }
+//A G  M
+//B FH LN
+//CE IK O
+//D  J P
+//index / (RowNum* 2 - 2)
