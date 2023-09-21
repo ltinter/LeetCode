@@ -10,8 +10,8 @@ namespace _006_ZigZagConversion
     {
         static void Main(string[] args)
         {
-            string test = "PAYPALISHIRING";
-            int rowsnum = 3;
+            string test = "ABC";
+            int rowsnum = 2;
             Console.WriteLine((new Solution()).Convert(test, rowsnum));
             Console.ReadLine();
         }
@@ -20,25 +20,49 @@ namespace _006_ZigZagConversion
     {
         public string Convert(string s, int numRows)
         {
-            if (numRows == 0) return "";
-            int sLen = s.Length;
-            char[] charS = s.ToCharArray();
-            char[] charset = new char[sLen];
-
-            for (int i = 0; i < sLen; i++)
+            string returnValue = "";
+            if (numRows == 1)
+                return s;
+            if (numRows == 2)
             {
-                charset[Procss(i, numRows)] = charS[i];
+                int index = 0;
+                List<char> a = new List<char>();
+                List<char> b = new List<char>();
+                foreach (char c in s)
+                {
+                    if (index % 2 == 0)
+                    {
+                        a.Add(c);
+                    }
+                    else
+                    {
+                        b.Add(c);
+                    }
+                    index++;
+                }
+                return string.Join("", a) + string.Join("", b);
             }
-
-            return (new string(charset));
-        }
-        public int Procss(int InputIndex, int numRows)
-        {
-            int returnvalue = 0;
-
-
-
-            return returnvalue;
+            List<List<char>> result = new List<List<char>>();
+            for (int i = 0; i < numRows; i++) result.Add(new List<char>());
+            for (int i = 0; i < s.Length; i++)
+            {
+                int index = i % (numRows * 2 - 2);
+                int resultIndex = 0;
+                if (index < numRows)
+                {
+                    resultIndex = index;
+                }
+                else
+                {
+                    resultIndex = numRows - (index - numRows + 2);
+                }
+                result[resultIndex].Add(s[i]);
+            }
+            foreach (var temp in result)
+            {
+                returnValue += string.Join("", temp);
+            }
+            return returnValue;
         }
     }
 }
